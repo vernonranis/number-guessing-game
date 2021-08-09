@@ -1,0 +1,92 @@
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 1em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+section {
+  padding-top: 5.5em;
+}
+
+h1,
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+a {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+footer {
+  height: 25vh;
+  background: var(--background-color-1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+::selection {
+  color: var(--text-color);
+  background: var(--highlight);
+}
+
+.bg-1 {
+  background-color: var(--background-color-1);
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-2 {
+  background-color: var(--background-color-2);
+  height: 100vh;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.iconbox a i {
+  color: var(--text-color);
+}
+
+.iconbox {
+  margin: 0 2em;
+}
