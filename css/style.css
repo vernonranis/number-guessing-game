@@ -52,6 +52,13 @@ footer {
   justify-content: center;
 }
 
+#guess {
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Chakra Petch', sans-serif;
+  text-align: center;
+}
+
 ::selection {
   color: var(--text-color);
   background: var(--highlight);
@@ -81,6 +88,35 @@ footer {
   justify-content: space-between;
   text-align: center;
   align-items: center;
+}
+
+.content-wrapper {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
+  height: 40vh;
+  border-radius: 10%;
+}
+
+.content-wrapper a {
+  background-color: var(--button-bgcol);
+  padding: 1em 2em;
+  color: var(--background-color-1);
+  font-weight: bold;
+  width: 10em;
+}
+
+.difficulty {
+  display: flex;
+  justify-content: center;
+}
+
+.input-control {
+  /* border: 1px solid red; */
+  width: 15em;
 }
 
 .iconbox a i {
