@@ -101,7 +101,7 @@ footer {
   border-radius: 10%;
 }
 
-.content-wrapper a {
+.btn {
   background-color: var(--button-bgcol);
   padding: 1em 2em;
   color: var(--background-color-1);
@@ -125,4 +125,39 @@ footer {
 
 .iconbox {
   margin: 0 2em;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.game-result {
+  display: none;
+}
+
+.modal-content {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: var(--text-color);
+  color: var(--background-color-1);
+  width: 30%;
+  height: 20%;
+  top: 50%;
+  left: 50%;
+}
+
+.btn-wrapper:last-child {
+  padding-top: 5em;
+  /* border: 1px solid red; */
 }

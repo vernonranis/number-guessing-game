@@ -63,8 +63,17 @@ inputField.addEventListener("keypress", (e) =>{
   if (e.key === "Enter") {
     if (secretNumber === parseFloat(inputField.value)) {
       console.log("You got it!");
+      document.querySelector(".modal").setAttribute("style", "display:flex");
+      document.querySelectorAll(".modal-content")[1].classList.add("game-result");
     } else {
       console.log("wrong answer");
+      document.querySelector(".modal").setAttribute("style", "display:flex");
+      document.querySelectorAll(".modal-content")[0].classList.add("game-result");
     }
   }
+});
+
+document.querySelector(".try-again-btn").addEventListener("click", () =>{
+  document.querySelector(".modal").setAttribute("style", "display:none");
+  document.querySelectorAll(".modal-content")[0].classList.remove("game-result");
 });

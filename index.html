@@ -28,6 +28,21 @@
 
 <body>
   <div class="wrapper bg-1">
+    <div class="modal">
+      <div class="modal-content">
+        <p>You Win!</p>
+        <div class="btn-wrapper">
+          <a href="#" class="btn" onclick="window.location.reload()">Play Again</a>
+        </div>
+      </div>
+      <div class="modal-content">
+        <p>You Lose!</p>
+        <div class="btn-wrapper">
+          <a href="#" class="btn try-again-btn">Try Again</a>
+          <a href="#" class="btn" onclick="window.location.reload()">Restart Game</a>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <a href="#" onclick="window.location.reload()">
         <h1>Number Guessing Game</h1>
