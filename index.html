@@ -38,7 +38,7 @@
       <div class="difficulty">
         <h3>Difficulty</h3>
         <div class="difficulty-control">
-          <select class="drop-down" name="difficulty-control">
+          <select class="drop-down" name="difficulty-control" onchange="updateSelectedOption()">
             <option value="easy">Easy</option>
             <option value="normal" selected>Normal</option>
             <option value="hard">Hard</option>
@@ -48,10 +48,10 @@
       </div>
       <div class="content-wrapper bg-2">
         <h2>Guess the secret number.</h2>
-        <h3> ( 1 - 10 ) </h3>
+        <h3> 1 - 10 </h3>
         <div class="input-control">
           <label for="guess"></label>
-          <input type="number" name="guess" id="guess" placeholder="Guess" required>
+          <input type="number" name="guess" id="guess" placeholder="Guess" required min="1" max="10">
         </div>
         <a href="#" class="btn" onclick="window.location.reload()">Restart Game</a>
       </div>
